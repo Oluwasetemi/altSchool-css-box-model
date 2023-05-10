@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+</head>
+<body>
+
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      /* width: 500px */
+    }
+
+
+    .box {
+      width: 500px;
+      max-height: 500px;
+      background-color: red;
+      /* border: 10px solid black; */
+      /* padding: 20px 30px; */
+      /* padding-block-start, padding-block-end */
+      /* padding-block: 20px; */
+      /* padding-inline-start, padding-inline-end */
+      /* padding-inline: 30px; */
+      /* margin: 20px; */
+      margin-block: 20px;
+      margin-inline: 20px;
+
+      /* writing-mode: vertical-lr; */
+    }
+
+    .box h1 {
+      height: 200px;
+    }
+
+
+  </style>
+
+  <div class="box">
+    <h1>This class is always testing my patience.</h1>
+    <h2>This class is always testing my patience.</h2>
+  </div>
+
+  <h1>This class is always testing my patience.</h1>
+  <h2>This class is always testing my patience.</h2>
+</body>
+</html>

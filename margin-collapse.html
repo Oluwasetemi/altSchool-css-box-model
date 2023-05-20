@@ -7,9 +7,27 @@
   <title>Margin Collapse</title>
 </head>
 <body>
+  <style>
+    .para {
+      border: 2px solid;
+    }
+    .para1 {
+      margin-bottom: -50px;
+    }
+    .para2 {
+      margin-top: 25px;
+    }
+  </style>
 
   <!-- Rules of Margin Collapse -->
   <!-- 1. Only vertical margins collapse -->
+
+    <div class="container">
+      <p class="para para1">Hello</p>
+    </div>
+    <!-- <br /> -->
+    <p class="para para2">Hey, I am below</p>
+
   <!-- 2. Only adjacent element margins collapse -->
   <!-- 3. Only margins of block-level elements collapse (flow layout, others do not - display property, flex, grid, floats, positioning, table layout, multiple column layout ) -->
   <!-- margin can collapse in the same direction -->

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute</title>
+</head>
+<body>
+  <style>
+    .container {
+      margin: auto;
+      inset: 0; /* top:0, left: 0, right: 0, bottom: 0 */
+      position: absolute;
+      width: 500px;
+      height: 500px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 3px solid palevioletred;
+      /* position: absolute; */
+      position: relative;
+      inset: 0;
+      margin: auto;
+      /* overflow: hidden; */
+    }
+
+    .box1 {
+      z-index: 3;
+    }
+
+    .circle {
+      border-radius: 50%;
+      border: inherit;
+      position: absolute;
+    }
+
+    .small {
+      width: 25px;
+      height: 25px;
+      left: 70px;
+      top: -17px;
+      background-color: white;
+    }
+
+    .medium {
+      width:35px;
+      height: 35px;
+      top: 70px;
+      left: -22px;
+      background-color: white;
+    }
+
+    .big {
+      width: 65px;
+      height: 65px;
+
+      top: -28.5px;
+      left: -28.5px;
+      background-color: white;
+    }
+
+    .box2 {
+      background-color: green;
+      top: -50px;
+      left: 100px;
+      z-index: 2;
+    }
+
+  </style>
+  <div class="container">
+    <div class="box box1">
+      <!-- <div class="big circle"></div> -->
+      <!-- <div class="small circle"></div> -->
+      <!-- <div class="medium circle"></div> -->
+    </div>
+    <div class="box box2">
+      Another box
+    </div>
+  </div>
+</body>
+</html>

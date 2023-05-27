@@ -14,20 +14,6 @@ article {
   position: relative;
 }
 
-.flag {
-  padding-left: 8px;
-  padding-right: 16px;
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: 500;
-  background: hsl(50deg 95% 85%);
-  box-shadow: 0px 1px 2px
-    hsl(50deg 45% 45% / 0.2);
-}
-
-
-
-/* Cosmetic styles below: */
 .product-photo {
   margin: -16px;
   margin-bottom: 12px;
@@ -39,7 +25,7 @@ article {
   border-radius: 8px 8px 0px 0px;
 }
 
-h2 {
+h2.header {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 0.5em;
@@ -51,16 +37,17 @@ h2 {
   font-weight: 300;
 }
 
-/*
-Below, you'll find that most of the cosmetic styles have been applied, but it's up to you to add that “New and Improved!” flag.
-
-Acceptance criteria:
-
-The yellow flag should be floating above the image, using absolute positioning. There should be 8px between the top of the card and the flag. It should stick out horizontally by 8px.
-The corners of the flag should be rounded: 4px on the left edges, and 1rem on the right edges.*
-*/
-
 .flag {
+  padding-left: 8px;
+  padding-right: 16px;
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 500;
+  background: hsl(50deg 95% 85%);
+  box-shadow: 0px 1px 2px
+    hsl(50deg 45% 45% / 0.2);
+
+  /* fix */
   position: absolute;
   top: 8px;
   left: -8px;
